@@ -2,7 +2,7 @@ n = int(input())
 
 a, b = 0, 1
 
-while n > 1:
+while n > 0:
     if n == 1:
         print(a)
         break
