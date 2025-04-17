@@ -5,9 +5,12 @@ if ht < 0:
     ht = 24 + (h2 - h1)
 
 mt = m2 - m1
-if mt < 0:
+if mt < 0 and ht != 0:
     mt = 60 + (m2 - m1)
     ht -= 1
+elif mt < 0 and ht == 0:
+    mt = 60 + (m2 - m1)
+    ht = 23
 
 if h1 == h2 and m1 == m2:
     print('O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)')
